@@ -42,7 +42,7 @@ function my_keydown(e)
 {
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
-	if((ball_x==hole_x)||(ball_y==hole_y)){
+	if((ball_x==hole_x)&&(ball_y==hole_y)){
 		canvas.remove(ball_obj);
 		console.log("Game Over");
 		document.getElementById("hd3").innerHTML="GAME OVER!!!";
